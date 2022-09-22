@@ -1,0 +1,51 @@
+Running unit tests
+F.FF..F.
+======================================================================
+FAIL: testEquilateralTriangles (__main__.TestTriangles)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\11rag\PycharmProjects\21092022\Test_Triangle.py", line 24, in testEquilateralTriangles
+    self.assertEqual(classifyTriangle(1, 1, 1), 'Equilateral', '1,1,1 should be equilateral')
+AssertionError: 'InvalidInput' != 'Equilateral'
+- InvalidInput
++ Equilateral
+ : 1,1,1 should be equilateral
+
+======================================================================
+FAIL: testRightTriangleA (__main__.TestTriangles)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\11rag\PycharmProjects\21092022\Test_Triangle.py", line 18, in testRightTriangleA
+    self.assertEqual(classifyTriangle(3, 4, 5), 'Right', '3,4,5 is a Right triangle')
+AssertionError: 'InvalidInput' != 'Right'
+- InvalidInput
++ Right
+ : 3,4,5 is a Right triangle
+
+======================================================================
+FAIL: testRightTriangleB (__main__.TestTriangles)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\11rag\PycharmProjects\21092022\Test_Triangle.py", line 21, in testRightTriangleB
+    self.assertEqual(classifyTriangle(5, 3, 4), 'Right', '5,3,4 is a Right triangle')
+AssertionError: 'InvalidInput' != 'Right'
+- InvalidInput
++ Right
+ : 5,3,4 is a Right triangle
+
+======================================================================
+FAIL: testnotatriangle (__main__.TestTriangles)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\11rag\PycharmProjects\21092022\Test_Triangle.py", line 36, in testnotatriangle
+    self.assertEqual(classifyTriangle(5,2,10),"NotATriangle","5,2,10 is not a triangle")
+AssertionError: 'InvalidInput' != 'NotATriangle'
+- InvalidInput
++ NotATriangle
+ : 5,2,10 is not a triangle
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.002s
+
+FAILED (failures=4)
+InvalidInput
